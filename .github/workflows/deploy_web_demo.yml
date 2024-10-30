@@ -50,8 +50,19 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install binaryen
 
-      - run: |
-          scripts/build_web.sh --release --wgpu
+      - name: Build
+        run: |
+          scripts/build_web.sh --release
+
+      - name: Compress
+        run: |
+          zip -r web_demo.zip web_demo/
+
+      - name: Upload artfact
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web_demo
+          path: web_demo.zip
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4

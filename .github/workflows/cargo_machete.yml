@@ -1,6 +1,6 @@
 name: Cargo Machete
 
-on: [push, pull_request]
+#on: [push, pull_request]
 
 jobs:
   cargo-machete:

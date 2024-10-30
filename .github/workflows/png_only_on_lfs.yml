@@ -1,6 +1,6 @@
 name: All; .png on git LFS
 
-on: [push, pull_request]
+#on: [push, pull_request]
 
 jobs:
   check-binary-files:

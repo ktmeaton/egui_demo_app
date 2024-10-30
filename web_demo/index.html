@@ -7,8 +7,7 @@
 
 <head>
     <title>egui – An immediate mode GUI written in Rust</title>
-    <link rel="canonical" href="https://ktmeaton.github.io/egui_demo_app/" />
-    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="manifest" href="web_demo/manifest.json" />
     <style>
         html {
             /* Remove touch delay: */
@@ -120,10 +119,10 @@
         delete WebAssembly.instantiateStreaming;
         // Service Workflow for Progressive Web App (PWA)
         if (navigator.serviceWorker) {
-            navigator.serviceWorker.register(
-                '/sw.js',
-                { scope: '/' }
-            )
+            navigator.serviceWorker
+                .register("./sw.js")
+                .then(res => console.log("service worker registered"))
+                .catch(err => console.log("service worker not registered", err))
         }
     </script>
 

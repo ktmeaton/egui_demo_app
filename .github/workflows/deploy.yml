@@ -1,4 +1,4 @@
-name: Deploy web demo
+name: Deploy
 
 on:
   # We only run this on merges to master

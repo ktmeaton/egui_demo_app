@@ -59,7 +59,7 @@ jobs:
           zip -r web_demo.zip web_demo/
 
       - name: Upload artfact
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: web_demo
           path: web_demo.zip

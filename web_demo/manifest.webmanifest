@@ -1,0 +1,18 @@
+{
+    "name": "egui Demo App",
+    "short_name": "egui",
+    "theme_color": "#ffcbe4",
+    "background_color": "#fa99ca",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://ktmeaton.github.io/egui_demo_app/",
+    "description": "Egui demo app",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "./favicon.ico",
+            "sizes": "48x48",
+            "type": "image/ico"
+        }
+    ]
+}

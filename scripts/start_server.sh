@@ -6,7 +6,7 @@ cd "$script_path/.."
 # Starts a local web-server that serves the contents of the `doc/` folder,
 # i.e. the web-version of `egui_demo_app`.
 
-PORT=8765
+PORT="${PORT:-8765}"
 
 echo "ensuring basic-http-server is installed…"
 cargo install basic-http-server

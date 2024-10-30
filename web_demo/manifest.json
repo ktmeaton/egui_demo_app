@@ -30,12 +30,7 @@
             "description": "A screenshot of the home page"
         }
     ],
-    "related_applications": [
-        {
-            "platform": "windows",
-            "url": "The URL to your app in that app store"
-        }
-    ],
+    "related_applications": [],
     "prefer_related_applications": false,
     "shortcuts": [
         {
